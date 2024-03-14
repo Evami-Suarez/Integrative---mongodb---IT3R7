@@ -1,0 +1,68 @@
+###Get All Employee Information
+GET http://localhost:3000/employee_information
+
+
+###Get Employee Information by ID 
+GET http://localhost:3000/employee_information/65f322b9c227d3175c2bf903
+
+
+###POST employee
+POST http://localhost:3000/Employee_information
+Content-Type: application/json
+
+{
+    "fname": "evami",
+    "mname": "yurag",
+    "lname": "suarez",
+    "age":21, 
+    "address":"iligan city",
+    "birthday": "July 5, 2002"
+   
+}
+
+###PATCH Employee Information by ID
+PATCH http://localhost:3000/Employee_information/65f322b9c227d3175c2bf903
+Content-Type: application/json
+
+{
+    "address":"Cagayan de Oro"
+}
+
+###DELETE Employee information by ID
+DELETE http://localhost:3000/Employee_information/65f31e3bcfc0da56cd3e148f
+
+
+
+
+
+###Get All Laptop Inventory
+GET http://localhost:3000/laptop_inventory
+
+###Get Laptop Inventory by ID 
+GET http://localhost:3000/laptop_inventory/65f321b01afa53123b09c160
+
+###POST Laptop Inventory
+POST http://localhost:3000/laptop_inventory
+Content-Type: application/json
+
+{
+    "laptopBrand": "Dell",
+    "quantity": "20",
+    "dateChecked":"3-14-2024"
+}
+
+
+###PATCH Laptop Inventory by ID
+PATCH http://localhost:3000/laptop_inventory/65f321b01afa53123b09c160
+Content-Type: application/json
+
+{
+    "quantity": 19
+}
+
+
+###DELETE Laptop Inventory by ID
+DELETE http://localhost:3000/laptop_inventory/65f3216d1afa53123b09c15e
+
+
+

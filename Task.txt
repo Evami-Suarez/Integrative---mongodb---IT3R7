@@ -1,0 +1,16 @@
+schema: laptop_inventory
+
+laptopBrand
+quantity
+dateChecked
+dateCreated
+
+schema: employee_information
+
+fname
+mname (optional)
+lname
+age min: 18, max:50 type number
+address
+birthday
+dateCreated
