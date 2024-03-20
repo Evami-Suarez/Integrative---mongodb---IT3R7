@@ -25,11 +25,11 @@ PATCH http://localhost:3000/Employee_information/65f322b9c227d3175c2bf903
 Content-Type: application/json
 
 {
-    "address":"Cagayan de Oro"
+    "address":"Iligan City"
 }
 
 ###DELETE Employee information by ID
-DELETE http://localhost:3000/Employee_information/65f31e3bcfc0da56cd3e148f
+DELETE http://localhost:3000/Employee_information/65f40773fb4dfc4af6cfaa6d
 
 
 
@@ -57,12 +57,12 @@ PATCH http://localhost:3000/laptop_inventory/65f321b01afa53123b09c160
 Content-Type: application/json
 
 {
-    "quantity": 19
+    "quantity": 2
 }
 
 
 ###DELETE Laptop Inventory by ID
-DELETE http://localhost:3000/laptop_inventory/65f3216d1afa53123b09c15e
+DELETE http://localhost:3000/laptop_inventory/65f407b1fb4dfc4af6cfaa75
 
 
 
