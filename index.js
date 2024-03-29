@@ -23,23 +23,23 @@ app.use(('/Employee_information'), Employee_informationRoute);
 app.use(('/Laptop_inventory'), Laptop_inventoryRoute);
 
 //Error if wrong endpoint
-app.use((req, res, next) => {
-    const err = new Error("Not Found");
-    err.status = 404;
-    next(err)
-})
+// app.use((req, res, next) => {
+//     const err = new Error("Not Found");
+//     err.status = 404;
+//     next(err)
+// })
 
 
-//Middleware Express handler
-app.use((err, req, res, next) => {
-    res.status(err.status || 500);
-    res.send({
-        error: {
-            status: err.status || 500,
-            message: err.message
-        }
-    })
-})
+// //Middleware Express handler
+// app.use((err, req, res, next) => {
+//     res.status(err.status || 500);
+//     res.send({
+//         error: {
+//             status: err.status || 500,
+//             message: err.message
+//         }
+//     })
+// })
 
 app.listen(port, () => {
     console.log(`Server running on port ${port}`);

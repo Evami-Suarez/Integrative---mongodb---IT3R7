@@ -9,25 +9,25 @@ const employee_informationSchema = new Schema(
         },
         mname: {
             type: String,
-            require: false,
+            required: false,
         },
         lname: {
             type: String,
-            require: true,
+            required: true,
         },
         age: {
             type: Number,
             min: 18,
             max: 50,
-            require: true,
+            required: true,
         },
         address: {
             type: String,
-            require: true,
+            required: true,
         },
         birthday: {
             type: String,
-            require: true,
+            required: true,
         },
         dateCreated: {
             type: Date,

@@ -5,15 +5,15 @@ const laptop_inventorySchema = new Schema(
     {
         laptopBrand: {
             type: String,
-            require: true,
+            required: true,
         },
         quantity: {
             type: Number,
-            require: true,
+            required: true,
         },
         dateChecked: {
             type: Date,
-            require: true,
+            required: true,
         },
         dateCreated: {
             type: Date,
